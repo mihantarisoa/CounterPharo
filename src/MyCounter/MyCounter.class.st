@@ -1,3 +1,6 @@
+"
+This is a **counter** test
+"
 Class {
 	#name : 'MyCounter',
 	#superclass : 'Object',
@@ -36,4 +39,11 @@ MyCounter >> increment [
 MyCounter >> initialize [ 
 	super initialize.
 	count := 0
+]
+
+{ #category : 'initialization' }
+MyCounter >> initializeCount [
+
+	super initializeCount.
+	count := 1
 ]
